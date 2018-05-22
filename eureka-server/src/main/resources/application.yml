@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: efangtec-eureka
+management:
+  security:
+    enabled: false
+server:
+  port: 8761
+eureka:
+  server:
+        enableSelfPreservation: false
+        evictionIntervalTimerInMs: 4000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    lease-renewal-interval-in-seconds: 10
