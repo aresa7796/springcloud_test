@@ -8,13 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="gateway" />
+        <module name="hello" />
         <module name="user" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
       <module name="gateway" target="1.8" />
+      <module name="hello" target="1.8" />
       <module name="user" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

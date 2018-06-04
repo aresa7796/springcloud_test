@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 8011
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+zuul:
+  routes:
+    users:
+      path: /users/**
+      service-id: user_service

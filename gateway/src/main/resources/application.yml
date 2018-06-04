@@ -10,6 +10,13 @@ eureka:
 spring:
   application:
     name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user_service
+          uri: lb://user_service
+          predicates:
+          - Path=/user/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE

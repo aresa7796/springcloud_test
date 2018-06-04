@@ -1,6 +1,11 @@
 spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
   application:
-    name: efangtec-eureka
+    name: eureka-server
 management:
   security:
     enabled: false
@@ -8,10 +13,11 @@ server:
   port: 8761
 eureka:
   server:
-        enableSelfPreservation: false
-        evictionIntervalTimerInMs: 4000
+    enableSelfPreservation: false
+    evictionIntervalTimerInMs: 4000
   client:
     register-with-eureka: false
     fetch-registry: false
   instance:
     lease-renewal-interval-in-seconds: 10
+    prefer-ip-address: true
