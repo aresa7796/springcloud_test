@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/hello/pom.xml" />
         <option value="$PROJECT_DIR$/zuul/pom.xml" />
         <option value="$PROJECT_DIR$/actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/product/pom.xml" />
       </list>
     </option>
   </component>

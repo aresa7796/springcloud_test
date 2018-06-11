@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="gateway" />
         <module name="hello" />
+        <module name="product" />
         <module name="user" />
         <module name="zuul" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="eureka-server" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="hello" target="1.8" />
+      <module name="product" target="1.8" />
       <module name="user" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
