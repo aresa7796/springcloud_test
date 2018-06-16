@@ -1,6 +1,7 @@
 package com.springzzc.product.model.mapper;
 
-import com.springzzc.product.model.dto.OrderMaster;
+
+import com.springzzc.product.model.dataobject.OrderMaster;
 
 public interface OrderMasterMapper {
     int deleteByPrimaryKey(String orderId);

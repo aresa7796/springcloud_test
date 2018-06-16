@@ -1,6 +1,7 @@
 package com.springzzc.product.model.mapper;
 
-import com.springzzc.product.model.dto.ProductCategory;
+
+import com.springzzc.product.model.dataobject.ProductCategory;
 
 public interface ProductCategoryMapper {
     int deleteByPrimaryKey(Integer categoryId);

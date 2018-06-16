@@ -26,7 +26,7 @@
     delete from order_detail
     where detail_id = #{detailId,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.springzzc.product.model.dto.OrderDetail" >
+  <insert id="insert" parameterType="com.springzzc.product.model.dataobject.OrderDetail" >
     insert into order_detail (detail_id, order_id, product_id, 
       product_name, product_price, product_quantity, 
       product_icon, create_time, update_time
@@ -36,7 +36,7 @@
       #{productIcon,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.springzzc.product.model.dto.OrderDetail" >
+  <insert id="insertSelective" parameterType="com.springzzc.product.model.dataobject.OrderDetail" >
     insert into order_detail
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="detailId != null" >
@@ -97,7 +97,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.springzzc.product.model.dto.OrderDetail" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.springzzc.product.model.dataobject.OrderDetail" >
     update order_detail
     <set >
       <if test="orderId != null" >
@@ -127,7 +127,7 @@
     </set>
     where detail_id = #{detailId,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.springzzc.product.model.dto.OrderDetail" >
+  <update id="updateByPrimaryKey" parameterType="com.springzzc.product.model.dataobject.OrderDetail" >
     update order_detail
     set order_id = #{orderId,jdbcType=VARCHAR},
       product_id = #{productId,jdbcType=VARCHAR},

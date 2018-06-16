@@ -1,6 +1,7 @@
 package com.springzzc.product.model.mapper;
 
-import com.springzzc.product.model.dto.UserInfo;
+
+import com.springzzc.product.model.dataobject.UserInfo;
 
 public interface UserInfoMapper {
     int deleteByPrimaryKey(String id);

@@ -1,6 +1,6 @@
 package com.springzzc.product.service.impl;
 
-import com.springzzc.product.model.dto.ProductInfo;
+import com.springzzc.product.model.dataobject.ProductInfo;
 import com.springzzc.product.model.mapper.ProductInfoMapper;
 import com.springzzc.product.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;

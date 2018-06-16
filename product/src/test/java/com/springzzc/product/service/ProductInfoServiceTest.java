@@ -1,6 +1,6 @@
 package com.springzzc.product.service;
 
-import com.springzzc.product.model.dto.ProductInfo;
+import com.springzzc.product.model.dataobject.ProductInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

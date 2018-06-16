@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev
+mybatis:
+  mapper-locations: classpath:dao/mapping/*.xml,classpath:dao/adapter/mapping/*.xml
+  type-aliases-package: com.springzzc.product.model.dataobject
+server:
+  port: 8013
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false

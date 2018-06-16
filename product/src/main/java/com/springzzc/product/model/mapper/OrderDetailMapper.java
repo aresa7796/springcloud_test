@@ -1,6 +1,7 @@
 package com.springzzc.product.model.mapper;
 
-import com.springzzc.product.model.dto.OrderDetail;
+
+import com.springzzc.product.model.dataobject.OrderDetail;
 
 public interface OrderDetailMapper {
     int deleteByPrimaryKey(String detailId);
